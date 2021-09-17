@@ -257,6 +257,7 @@ class _LoginState extends State<Login> {
       'email': email,
       'password': password,
     };
+    // print(data);
 
     var res = await Network().authData(data, '/login');
     var body = json.decode(res.body);
